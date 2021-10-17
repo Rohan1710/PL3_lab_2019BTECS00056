@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Android-blogs</title>
+    <!-- <style>
+      body {
+        background-image: url(" data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: white;
+      }
+      p {
+        text-align: center;
+      }
+      image {
+    vertical-align: middle;
+    }
+    </style> -->
+  </head>
+    <img
+      style="display: inline"
+      src="https://www.androiddeveloper.co.in/blog/wp-content/uploads/2020/08/logo.png"
+      alt="logo"
+      height="60"
+    />
+    <h1 style="display: inline" style="text-align: center">
+      <font style="display: inline;" face="Lato" size="6">Pick up some android stuffs</font>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <font face="Lato" size="3">
+        <a href="#" style="color:white">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" style="color: white">VIDEOS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" style="color: white">Contact Us</a>
+      </font>
+    </h1>
+    <br />
+    <hr />
+    <br /><br /><br /><br /><br />
+    <h1 align="center">
+      <font face="Lato" color="white" size="8">
+        
+      </font>
+    </h1>
+    <h2 style="color: black" textalign="center"><strong> About Us</strong></h2>
+    <p style="font-size: 20px">
+      <strong>
+        <p>
+          Developers are our partners and by pairing their creativity and innovation with our platforms and tools, together we create delightful experiences for billions of people around the world. Listening carefully to their feedback is an important part of how we continue to make Android better with each release and improve how mobile app stores work. In an April 2019 blog post we shared some updates we made to Android APIs and Play Policies based on developer feedback. And today, we wanted to share some additional insights we’ve gained from developer feedback and how we’re taking that input to improve Google Play and Android. Some of the key themes we’ve heard include:<br>
 
+          Supporting developers’ ability to choose how they distribute their apps through multiple app stores on different platforms (mobile, PC, and console), each with their own business model competing in a healthy marketplace;<br>
+          Clarifying our policies regarding who needs to use Google Play’s billing system and who does not;<br>
+          Ensuring equal treatment for all apps, including first-party and third-party apps, on our platforms;<br>
+          Allowing developers to connect and communicate directly with their customers;<br>
+          Enabling innovation and ensuring our policies embrace new technologies that can help drive the consumer experience forward.<br>
+          
+        </p>
+ 
+      </strong>
+    </p>
+    <br />
+    <p style="font-size: 20px">
+      <strong>
+       
+    </strong>
+    </p>
+    <hr />
+    <h2 style="color: black"><strong>Our blogs</strong></h2>
+    <div class= "image" style="float:left; padding-right:10px">
+        <img src="https://www.androiddeveloper.co.in/blog/wp-content/uploads/2020/09/Tips-to-Speed-Up-Your-Mobile-App-Development-624x312.jpg"/>
+    </div>
+    <div class="body">
+      <br>
+        <h3 style="text-align:inline;">
+        20+ Awesome Open-Source Android Apps To Boost Your Development Skills
+        </h3>
+        <p style="display: inline">
+             The best way to learn is to read and that’s true for a developer as well. If you want to become a better developer, you have to read more code. It’s as simple as that.
+              Books, blogs, forums are all good to a certain extent but there is nothing that can replace some fully-functional, exhaustive open-source projects where the entire app with all its resources is right in front of you.
+              All you have to do is sit back, take a cup of coffee and read some kick-ass code. Here in this article, we bring some of the best open-source Android apps from various categories and genres to fulfill all your learning and development needs.
+              You can try these apps directly from Play Store to have a hands-on experience before diving deep into the code. The difficulty level attached with each app will help you to judge if you should instantly dive into it or put it aside for the time being.            
+            <br>                 
+        </p>
+        <p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          LeafPic
+(Github | Play Store | Difficulty: Beginner)<br>
+Photo and video gallery apps are one of the most common apps that you can find on any Android device. Ever wondered how they are made? LeafPic is one of the best open-source gallery app you can try and learn from.
+It is quite simple, easy to understand and is perfectly suitable for any beginner developer. One of the best things I have found in this app is the way they have implemented dynamic theming. It is something that many Android developers have struggled to implement properly.
+        </p>
+        <p>
+          Simple Calendar
+(Github | Play Store | Difficulty: Beginner)<br>
+
+A simple and easy-to-use calendar app built purely using Kotlin. If you were looking to learn Kotlin, then this is probably one of the best ways to start.
+The goal of this app is quite simple which makes it perfect to get your hands dirty learning a completely new language for developing Android apps. Another cool thing you can learn from this project is to make custom desktop widgets for Android.
+</p>
+<br>
+<p>
+Amaze File Manager
+(Github | Play Store | Difficulty: Intermediate)<br>
+
+Another extremely common Android app that you can find on almost any Android device, is a file manager.
+Though building a file manager app might seem straight-forward at first, but it actually is quite difficult to get it right across all Android platforms and all devices.
+There are a lot of good things you can learn from this app, especially how to perform proper file handling on SD cards. But I would not recommend you to follow the coding standards used in this project as it is no way up to the mark.
+<br>
+<br>
+<a href="https://medium.com/@AndroidDev"><b>Read More here</b></a>
+        </p>
+      </div>
+      <br>
+      <br>
+      <div class="image" style="float:left; padding-right:10px;">
+          <img src="https://miro.medium.com/max/375/1*obonx4eJ2OdYTWtkCzxqMQ.jpeg"></div>
+      <div class="body">
+        <h3 class="contentheading">
+         Animate all the things. Transitions in Android                
+        </h3>
+        <p style="display: inline">  
+        Hey, Android Developer. I would like to tell you something new about animations. Google finally made a statement with <a href="https://www.google.com/design/spec/motion/material-motion.html">Material Design: </a>animations are not only for iOS. Part of the new concept is Material motion.
+“Motion provides meaning. Objects are presented to the user without breaking the continuity of experience even as they transform and reorganize. Motion in the world of material design is used to describe spatial relationships, functionality, and intention with beauty and fluidity.”
+- Material Design guidelines.
+In fact, the process of creating animations takes time. It’s sure tempting to just call setVisibility(View.VISIBLE) and move on to business logic of your awesome new feature, given that it’s already past all deadlines. But remember: every time you ignore opportunity to add meaningful UI transition another sad designer appears somewhere in the world.
+What if I told you that animations require less effort than you think? Have you ever heard about Transitions API? Yes, it is that thing promoted by Google for fancy animations between Activities. Sadly, it is available only starting from Android 5.0. So no one is actually using it. But imagine that this API can be efficiently used in many different cases and, what’s even more exciting, available on older Android versions.
+Let’s start with some history
+New animateLayoutChange parameter was introduced for ViewGroup in Android 4.0. But even with calling getLayoutTransition() and configuring some stuff inside it, it was still unstable and not flexible enough. So you couldn’t do much with it.
+Version 4.4 Kitkat brings us idea of Scenes and Transitions. Scene is technically the state of all views in our Scene root (layout container). Transition is the set of Animators which will be applied for the view to perform smooth transition from the one scene to another. Will it be more fascinating with the examples? Yeah.                  
+            <br>                 
+            <br>
+            <p>Simple types of Transition<br>
+ChangeBounds: It animates changes to view position and size. This one moves the button in our example.<br>
+Fade:It extends Visibility class and performs most popular animations — fade in and fade out.In example it’s applied to TextView.<br>
+TransitionSet: It’s Transition that is actually a set of another Transitions. They can be started together or sequential, to change it call setOrdering.<br>
+AutoTransition: It’s TransitionSet that contains Fade out, ChangeBounds and Fade in in sequential order. At first, views that don’t exist in the second scene are faded out, then change bounds applied for changes of position and size, and, finally, new views appear with fade in. AutoTransition used by default when you don’t specify any transition in the second argument of beginDelayedTransition.</p>
+        </p>
+      </div>
+      <br />
+    <hr />
+    <h2 style="color: black"><strong> HERE ARE SOME MORE INTERESTING STORIES:</strong></h2>
+    <nav>
+        <p style="text-align: center">
+           <p>
+        <a href="https://proandroiddev.com/modern-android-development-with-kotlin-september-2017-part-1-f976483f7bd6">Modern Android development with Kotlin</a>
+      </p>
+       <p>
+        <a href="https://medium.com/@harivigneshjayapalan/dagger-2-for-android-beginners-introduction-be6580cb3edb">Dagger 2 for Android Beginners — Introduction</a>
+      </p>
+      <p>
+        <a href="https://android.jlelse.eu/android-interview-questions-cheat-sheet-96ea01c88def?source=search_post">Android Interview Questions Cheat Sheet — Part I</a>
+      </p>
+        </p>
+      </nav>
+      <br>
+      
+      <hr/>
+      <h2 style="color: black"><strong>Contact Us</strong></h2>
+       
+      <footer>
+        <p>Author : Rohan Bondre </p>
+        <p>Walchand college of Engineering, Sangli </p>
+        <p><a href="walchand@gmail.com">To send your Queries</a></p>
+        
+      </footer>
+  </body>
+</html>
