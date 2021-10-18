@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Fundamentals</title>
+</head>
+<body>
+	<header><h2><marquee>Problem Statement: Write a program in any language to find the maximum and
+	minimum element in an array.</marquee></h2></header><hr>
+	<section>
+		<h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Program</h2>
+		<code>
+			#include &lt stdio.h &gt<br>
+			void main()<br>
+			{<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int arr[100];<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i, mx, mn, n;<br>
+	    
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("\n\nFind maximum and minimum element in an array :\n");<br>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Input the number of elements to be stored in the array :");<br>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&n);<br>
+	   
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Input %d elements in the array :\n",n);<br>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0;i &lt n;i++)<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("element - %d : ",i);<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d",&arr[i]);<br>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx = arr[0];<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mn = arr[0];<br>
+
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=1; i &lt n; i++)<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(arr[i] &gt mx)<br>
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+	            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mx = arr[i];<br>
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(arr[i] &gt mn)<br>
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+	            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mn = arr[i];<br>
+	        	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Maximum element is : %d\n", mx);<br>
+	    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Minimum element is : %d\n\n", mn);<br>
+			}
+
+		</code>	
+	</section><hr>
+	<section>
+		<h2>Input</h2>
+		<p>Input the number of elements to be stored in the array : 5<br>
+			Input 5 elements in the array :<br>
+			element - 0: 23<br>
+			element - 1: 45<br>
+			element - 2: 10<br>
+			element - 3: 29<br>
+			element - 4: 36<br>
+			
+		</p>
+
+	</section><hr>
+	<section>
+		<h2>Output</h2>
+		<p>Maximum element is : 45<br>
+			Minimum element is : 10<br></p>
+	</section><hr>
+	<section>
+		<h2>Variables used in the program</h2>
+		<var>i, mx, mn, n, arr </var>
+	</section><hr>
+	<section>
+		<h2>Complexity</h2>
+		<small>The complexitiy of above program is: O(n<sup>2</sup>)</small>
+	</section><hr>
+	<h2 style="color: red"><strong>Click here for More Algorithms</strong></h2>
+	<p><a href="https://www.geeksforgeeks.org/c-program-to-find-the-maximum-and-minimum-element-of-the-array/">Geeks For Geeks</a></p>
+	<p><a href="https://www.w3resource.com/c-programming-exercises/array/c-array-exercise-9.php">W3 resources</a></p>
+	<p><a href="https://www.javatpoint.com/java-program-to-print-the-largest-element-in-an-array">JavaTpoint</a></p>
+
+</body>
+</html>
