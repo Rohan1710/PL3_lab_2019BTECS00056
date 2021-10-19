@@ -1,25 +1,29 @@
 div
 {
     border-radius: 5px;
-    }
+}
 #header
 {
-    position: fixed;
-    z-index: 1;
-    height:40px;
+    /* position: fixed; */
+    /* z-index: 1; */
+    float: left;
+    height: fit-content;
     width: 98%;
-    background-color: #668284;
-    margin-bottom: 10px
+    background-color: #704197;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    color: #ffffff;
+    /* margin-bottom: 10px; */
     }
-
+/* 
 #name {
     float:left;
 	margin-left: 20px;
 	padding-bottom: 10px;
-	font-size: 16px;
+	font-size: 30px;
 	font-family: Verdana, sans-serif;
 	color: #ffffff;
-}
+} */
 
 #email{
     float:right;
@@ -67,11 +71,19 @@ a:hover {
     
 #footer
 {
+    display: flex;
+    justify-content: space-evenly;
     height:40px;
     clear:both;
     position: relative;
+    height: fit-content;
     background-color: #C1E3E1;
-    }
+    /* display: grid;
+    grid-template-columns: repeat(4, 25%);  */
+    grid-column-gap: 10px;
+    color: #3d45b9;
+}
+    
     
 h3
 {
@@ -117,4 +129,19 @@ td
 #heading
 {
     font-weight:bold;
-    }
+}
+
+#course{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-column-gap: 10px;
+    color: #3d45b9;
+}
+.photo{
+    border: 5px;
+    border-radius: 50%;
+}
