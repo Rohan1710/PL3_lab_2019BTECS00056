@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .personal{
+            text-align: center;
+            text-decoration-style: solid;
+        }
+
+        .contactfooter{
+            background-color: rgb(233, 234, 241);
+            align-content: center;
+            text-align: center;
+        }
+        </style>
+        <script>
+            function validateForm()
+            {
+                var x=document.forms["myform"]["fname"].value; 
+    
+                if(x==null || x=="" )
+                {
+                    alert("Please Enter the Name");
+                    return false;
+                }
+    
+                var y=document.forms["myform"]["lname"].value;
+    
+                if(y==null || y=="")
+                {
+                    alert("Please enter the last name");
+                    return false;
+                }
+                else
+                {
+                    thank();
+                    return true;
+                }
+    
+            }
+            function thank(){
+                alert("Thank you for visiting...!");
+            }
+        </script>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>This is Wheather Checker Site.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 class="personal"><b><div><div>Rohan Bondre</div>
+    <div>PRN - 2019BTECS00056</div>
+    <div>Batch - T2</div>
+    </div>
+    </div></b></h2>
+
+ <footer class="contactfooter"><div class="form">
+        <h4>Contact Me</h4>
+        <form name="myform" action="" onsubmit="return validateForm()" method="post">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" ><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" ><br>
+          <label for="fname">Description:</label><br>
+          <input size="40" type="text" id="Description" ><br><br>
+          <input type="submit" value="Submit" >
+        </form> 
+      </div></footer>
+
+</body>
+</html>
