@@ -1,113 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/icons/site.webmanifest" />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./weather.js"></script>
-    <title>Weather Checker</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+  <link rel="manifest" href="/icons/site.webmanifest" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./weather.js"></script>
+  <script>
+    function myFunction() {
+      alert("Wheather Details.....!");
+    }
+    </script>
+  <title>Weather Checker</title>
+</head>
+
+
+<body>
 
 
 
-<div class="topnav">
+  <div class="topnav">
     <a class="active" href="#home">Home</a>
     <a href="UserRegistration.html">Register</a>
     <a href="UserLogin.html">Login</a>
     <a href="AboutUs.html">About</a>
   </div>
-  
 
-    <div class="container">
-      <span>
-        <i class="large material-icons">cloud_queue</i>
-        <header>Weather Checker</header></span
-      >
-      <main>
-        <div class="row">
-          <div class="col s6">
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">location_city</i>
-                <input id="city" type="text" class="validate" />
-                <label for="city">City name</label>
-              </div>
-            </div>
-            <div class="row">
-              <button
-                class="btn blue amber lighten-2 waves-effect waves-light"
-                onclick="getWeatherReport(document.getElementById('city').value)"
-              >
-                Is it?
-                <i class="material-icons right">wb_sunny</i>
-              </button>
+
+  <div class="container">
+    <span>
+      <i class="large material-icons">cloud_queue</i>
+      <header>Weather Checker</header>
+    </span>
+    <main>
+      <div class="row">
+        <div class="col s6">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">location_city</i>
+              <input id="city" type="text" class="validate" />
+              <label for="city">City name</label>
             </div>
           </div>
-          <div class="col s6 vertical-divider">
-            <div>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <i class="material-icons">my_location</i> coordinate
-                    </td>
-                    <td id="coordinate"></td>
-                  </tr>
-                  <tr>
-                    <td><i class="material-icons">whatshot</i> temp - 30  &#8451</td>
-                    <td id="temp"></td>
-                  </tr>
-                  <tr>
-                    <td><i class="material-icons">cloud_queue</i> weather - Clear</td>
-                    <td id="weather"></td>
-                  </tr>
-                  <tr>
-                    <td><i class="material-icons">cloud_queue</i> Wind - 3 km/hr</td>
-                    <td id="weather"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="row">
+            <button class="btn blue amber lighten-2 waves-effect waves-light"
+              onclick="myFunction()">
+              Is it?
+              <i class="material-icons right">wb_sunny</i>
+            </button>
           </div>
         </div>
-      </main>
-    </div>
-  </body>
+        <div class="col s6 vertical-divider">
+          <div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="material-icons">my_location</i> coordinate
+                  </td>
+                  <td id="coordinate"></td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">whatshot</i> temp - 30 &#8451</td>
+                  <td id="temp"></td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">cloud_queue</i> weather - Clear</td>
+                  <td id="weather"></td>
+                </tr>
+                <tr>
+                  <td><i class="material-icons">cloud_queue</i> Wind - 3 km/hr</td>
+                  <td id="weather"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  
+  
+
+
+
+</body>
+
 </html>
