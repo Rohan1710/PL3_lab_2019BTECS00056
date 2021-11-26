@@ -6,4 +6,11 @@ const server = http.createServer(function(req,res){
     res.end();
 })
 
-server.listen(port,'127.0.0.1');
+server.listen(port,function(error){
+    if(error){
+        console.log('Something went wrong',error);
+    }
+    else{
+        console.log('Server is listening',port);
+    }
+})
