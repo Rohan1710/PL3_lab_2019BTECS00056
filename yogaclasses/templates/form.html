@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Admission Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		{% comment %} <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"> {% endcomment %}
+		
+		<!-- STYLE CSS -->
+		
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css.map' %}">
+        <link rel="stylesheet" href="{% static 'css/style.scss' %}">
+
+        {% comment %} script {% endcomment %}
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="../static/images/registration-form-6.jpg" alt="" style="height: 500px; width: 300px;">
+				</div>
+				<form method="post" action="">
+                    {% csrf_token %}
+					<h3>Yoga class Admission Form</h3>
+					<div class="form-row">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+						<input type="text" class="form-control" id="age" name="age" placeholder="Age between (18 - 65)">
+					</div>
+					<div class="form-row">
+						<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+						<div class="form-holder">
+							<select name="batch" id="batch" class="form-control">
+								<option value="" disabled selected>Choose Batch Timing</option>
+								<option value="Batch 01">Batch-1    6-7AM</option>
+								<option value="Batch 02">Batch-2    7-8AM</option>
+								<option value="Batch 03">Batch-3    8-9AM</option>
+								<option value="Batch 03">Batch-4    5-6PM</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<textarea name="address" id="address" placeholder="Address" class="form-control" ></textarea>
+                    <button id="payment_status" name="payment_status" type=Submit>Make Payment
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+					<button type=Submit>Submit
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+				</form>
+				
+			</div>
+		</div>
+
+		<script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
